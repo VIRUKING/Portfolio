@@ -3,11 +3,32 @@ import React from "react";
 import DigitalMenu from "../../public/Digital_Menu.png";
 import online from "../../public/online.png";
 import blode from "../../public/blode1.png";
+import portfolio from "../../public/portfolio.png";
 import { Link } from "react-scroll";
 function portFolio() {
   const cardItem = [
     {
       id: 1,
+      logo: portfolio,
+      name: "Portfolio",
+      ds: (
+        <p>
+          &#x2022;Developed a personal portfolio website utilizing React and
+          Tailwind CSS to ensure a modern, responsive design that adapts
+          seamlessly across devices. Successfully deployed the website on
+          Netlify, guaranteeing its accessibility and ease of use for potential
+          employers. <br />
+          <br />
+          &#x2022; Technologies used: HTML, CSS, JavaScript,
+          React.js,TailwindCSS,
+        </p>
+      ),
+      videoLink:
+        "https://drive.google.com/file/d/1_S9dPzzAP1T9HneJz4VMwQhTaafpxDrB/view?usp=sharing",
+      sourceCodeLink: "https://github.com/VIRUKING/Portfolio",
+    },
+    {
+      id: 2,
       logo: DigitalMenu,
       name: "Digital Menu",
       ds: (
@@ -17,15 +38,15 @@ function portFolio() {
           codes. <br />
           <br />
           &#x2022; Technologies used: JavaScript, HTML, CSS, Tailwind CSS,
-          React, Node.js, MongoDB
+          React.js, Node.js, MongoDB
         </p>
       ),
       videoLink:
         "https://drive.google.com/file/d/1MAlZeMNm3QPQjeNRbaPq0Y7cWIXZ6hUm/view?usp=sharing",
-        sourceCodeLink: "https://github.com/VIRUKING/DigitalMenu/",
+      sourceCodeLink: "https://github.com/VIRUKING/DigitalMenu/",
     },
     {
-      id: 2,
+      id: 3,
       logo: online,
       name: "ONLINE EXAMINATION SYSTEM",
       ds: (
@@ -42,11 +63,12 @@ function portFolio() {
           PHP, SQL.
         </p>
       ),
-      videoLink: "https://drive.google.com/file/d/1eInY9HvPrX54NNWOt0h3ziZYreib6zeA/view?usp=sharing",
+      videoLink:
+        "https://drive.google.com/file/d/1eInY9HvPrX54NNWOt0h3ziZYreib6zeA/view?usp=sharing",
       sourceCodeLink: "https://github.com/VIRUKING/online-examination",
     },
     {
-      id: 3,
+      id: 4,
       logo: blode,
       name: "BLOODBANK MANAGEMENT SYSTEM",
       ds: (
@@ -59,8 +81,10 @@ function portFolio() {
           &#x2022; Technologies used:HTML, CSS, Bootstrap, PHP, SQL, MySQL
         </p>
       ),
-      videoLink: "https://drive.google.com/file/d/1rmg8LjXE71H2DxBmC94IvltorCib4eDz/view?usp=sharing",
-      sourceCodeLink: "https://github.com/VIRUKING/blood-donor-management-system",
+      videoLink:
+        "https://drive.google.com/file/d/1rmg8LjXE71H2DxBmC94IvltorCib4eDz/view?usp=sharing",
+      sourceCodeLink:
+        "https://github.com/VIRUKING/blood-donor-management-system",
     },
   ];
   return (
@@ -72,7 +96,7 @@ function portFolio() {
         <h1 className="text-3xl font-bold mb-5">Projects</h1>
         {/* <span className=" underline font-semibold">Projects</span> */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-6">
-          {cardItem.map(({ id, logo, name, ds, videoLink ,sourceCodeLink}) => (
+          {cardItem.map(({ id, logo, name, ds, videoLink, sourceCodeLink }) => (
             <div
               className="md:w-[600px] md:h-[700px]  border-[2px]  shadow-lg p-1 cursor-pointer hover:scale-110 duration-300"
               key={id}
