@@ -40,12 +40,6 @@ Chapter 2: complex calculations
 	Github : https://github.com/VIRUKING/scientific-calculator
 
 
-Output :
-		
- 
-	
- 
-
 Chapter 3: landing page
 
 3.1	Learning Objectives
@@ -65,35 +59,6 @@ Chapter 3: landing page
 3.4	Code
 
 github : https://github.com/VIRUKING/LANDING-PAGE
-
-Output :
-
-
- 
-
-
- 
-
-
-
- 
-
-		
-
-
-
-
-
-
-
-
- 
-
-
- 
-
-
-
 
 Chapter 4: Portfolio
 
@@ -115,10 +80,6 @@ Chapter 4: Portfolio
 	
  Github :      https://github.com/VIRUKING/Portfolio   
  Deployed : portfolio
-
-
-	Output :
-
  
 
 
